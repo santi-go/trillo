@@ -1,0 +1,5 @@
+/node_modules
+
+/css/style.comp.scss
+/css/style.min.scss
+/css/style.prefix.scss
