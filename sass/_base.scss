@@ -1,4 +1,4 @@
-
+///////////////// CSS variables
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366;
@@ -19,7 +19,14 @@
   --grey-line: 1px solid var(--color-grey-light-2);
 }
 
-*{
+
+///////////////////SASS variables
+
+$bp-largest: 75em;//1200px/16 = 75em
+$bp-large: 68.75em;//1100px
+$bp-medium: 56.25em;//900px
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -33,6 +40,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;// 1rem = 10px
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
